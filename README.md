@@ -5,14 +5,14 @@
 
 
 The Hybrid Data Storage application demonstrates
-the Bluemix services **Single Sign On**, **Object Storage (v2)**, and **Secure Gateway**.
+the Bluemix services **Single Sign On**, **Object Storage**, and **Secure Gateway**.
 
 ## Introduction
 
 This Hybrid Data Storage sample application has been created so you can deploy it into your personal space
 after signing up for Bluemix and the DevOps Services. You will attach the
-**Object Storage (v2)**, **Single Sign On**, and the **Secure Gateway** services. Once the application is set up, you will be able
-to interact with files sitting on either **Object Storage (v2)** or an on-prem solution.
+**Object Storage**, **Single Sign On**, and the **Secure Gateway** services. Once the application is set up, you will be able
+to interact with files sitting on either **Object Storage** or an on-prem solution.
 
 
 ## Sign up for and log into Bluemix and DevOps
