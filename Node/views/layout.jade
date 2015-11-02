@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/dropzone.css')
+    script(type='text/javascript', src='/javascripts/jquery-2.1.4.min.js')
+    script(type='text/javascript', src='/javascripts/utils.js')
+    script(type='text/javascript', src='/javascripts/scripts.js')
+    script(type='text/javascript', src='/javascripts/dropzone.js')
+    script(type='text/javascript', src='/javascripts/jquery.tablesorter.js')
+  body
+    block header
+      .pull-left
+        h4 Architecture Center Application
+      .pull-right
+        h4 Made with
+          b  IBM Bluemix
+      br
+      hr
+    block content
