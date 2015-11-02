@@ -86,7 +86,7 @@ You have now attached Single Sign On and can move on to attach your Secure Gatew
 Once you have successfully bound the **Object Storage**, **Single Sign On**, and **Secure Gateway** services to your bridge
 application, your app's dashboard should appear like this:
 
-![EXAMPLE](images/dashboard.jpg)
+![EXAMPLE](images/hdsv3.jpg)
 
 ## Fork Project to a Personal DevOps Space
 
