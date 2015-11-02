@@ -94,7 +94,7 @@ Next, fork the publicly accessible repository hosted in http://hub.jazz.net to y
 personal DevOps space. Once you do this, you will be able to deploy the code to Bluemix and spin
 up instances of the Hybrid Data Storage application.
 
-1. Navigate to [the tutorial's repository](https://hub.jazz.net/project/wprichar/hybrid-data-store/overview).
+1. Navigate to [the tutorial's repository](https://hub.jazz.net/project/cfsworkload/hybrid-data-store/overview).
 2. In top right of the page, click **Fork Project**. A pop-up menu will appear where you'll provide information about the forked project.
 3. In **Name your project**, enter the name you chose for your starter Node.js app.
 4. Select the same **Space** where your starter Node.js app was created and click **CREATE**.
