@@ -28,7 +28,7 @@ Create a Cloud Foundry (CF) bridge application in the Bluemix UI. The bridge app
 2. From the Dashboard page, select **CREATE APP** under **Cloud Foundry Apps**. This will open a window to select either Web or Mobile.
 3. Select **Web**.
 4. In the next screen, select **SDK for Node.js** and click **CONTINUE**.
-5. Now, where it says **App Name**, specify a unique name for your bridge CF application. Take note of this name as you'll use it later when you fork your project.
+5. Now, where it says **App Name**, specify a unique name for your bridge CF application that does not have spaces. Take note of this name as you'll use it later when you fork your project.
 
 It may take a while for the application to be created and staged. Once it finishes staging,
 you will have successfully created a starter Node.js application to be used as your bridge app in Bluemix. You should now see the
@@ -166,16 +166,16 @@ For example:
   This will connect the gateway to your virtual machine. Once it succeeds, you will see a message like the example shown below:
 
   ![EXAMPLE](images/connected.jpg)
-
-10. In the Secure Gateway window, enter `acl allow :27017`.
-11. Return to Bluemix and click **I'M DONE**.
-12. Select the gateway you just created and wait for it say **CONNECTED**
-13. Enter a **Destination name**.
-14. Enter the local IP address you got from the `ipconfig` command inside your VM in the **IP Address** field.
-15. Enter **27017** in the **Port** field.
-16. Click the **+** (plus icon) to save your destination. A tile will appear below.
-17. In the newly created tile, click the **i** (information icon) and you will see the IP port of your gateway to the MongoDB.
-18. Copy the IP port to your clipboard.
+10. Press enter and a **cli>** will appear 
+11. In the Secure Gateway window, enter `acl allow :27017`.
+12. Return to Bluemix and click **I'M DONE**.
+13. Select the gateway you just created and wait for it say **CONNECTED**
+14. Enter a **Destination name**.
+15. Enter the local IP address you got from the `ipconfig` command inside your VM in the **IP Address** field.
+16. Enter **27017** in the **Port** field.
+17. Click the **+** (plus icon) to save your destination. A tile will appear below.
+18. In the newly created tile, click the **i** (information icon) and you will see the IP port of your gateway to the MongoDB.
+19. Copy the IP port to your clipboard.
 
   ![Example](images/gwinfo.jpg)
 
