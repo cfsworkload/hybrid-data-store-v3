@@ -45,7 +45,7 @@ module.exports.post = function(req, res, readStream, fileName, callback) {
             if (err) {
                 res.status(404).json(err).end();
             } else {
-                callback && callback(res);pplicationName_20
+                callback && callback(res)
             }
         });
 
@@ -81,7 +81,7 @@ router.get('/:file', function (req, res) {
              storageSwift.getFile(config.container, { remoteName: fileName, stream: res}, function ( err ){
                  if(err) console.log(err);
                  else {
-                                                res.end();
+                         res.end();
                  }
              })
          });
