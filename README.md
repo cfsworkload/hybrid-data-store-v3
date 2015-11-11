@@ -49,7 +49,7 @@ add or bind services.
 5. Accept the default values.
 6. Click **CREATE**.
 7. Restage your application when prompted and wait until the application is running.
-8. Return to the application's dashboard by selecting **Overview**, and select the OSV2 service you just created.
+8. Return to the application's dashboard by selecting **Overview**, and select the Object Storage service you just created.
 9. In the window, select **IBM Cloud Public** and click **SAVE**.
 
 You have successfully deployed and bound an instance of Object Storage to your starter bridge application.
@@ -79,7 +79,7 @@ You have now attached Single Sign On and can move on to attach your Secure Gatew
 
 ### Add Secure Gateway
 
-1. Using what you've learned, return to the bridge application's dashboard and add the **Secure Gateway** service from the **Intergration** category.
+1. Using what you've learned, return to the bridge application's dashboard and add the **Secure Gateway** service from the **Integration** category.
 2. In the service configuration, keep the default values and make sure the **App** field has selected your bridge application instead of  leaving the service unbound.
 3. Click **RESTAGE** and click **Overview** in the left sidebar.
 
@@ -245,7 +245,7 @@ Now your application is ready to be accessed. In a browser window, enter your `<
 
 # What Does the App Do?
 
-Your new Hybrid Data Storage application can upload files from your local system, delete files, and retrieve files from either Object Storage (v2) or your on-prem database. Upon first loading the application, there won't be any files listed under **Object Storage**
+Your new Hybrid Data Storage application can upload files from your local system, delete files, and retrieve files from either Object Storage or your on-prem database. Upon first loading the application, there won't be any files listed under **Object Storage**
 or **On Premises**. To start uploading files from your local file system, select the **Object Storage** or **On Premises** box at the top of the page and select **Drop files or click here to upload**.
 
 ![EXAMPLE](images/appdo.png)
@@ -257,7 +257,7 @@ To inspect on-premises content:
   `sudo mongo <internal IP from ifconfig>`
   2. Query the list of collections.  
   `db.getCollectionNames()`
-  3. Query files in collection the collection "fs.files," which shows files uploaded to the on-prem location.  
+  3. Query files in the collection "fs.files," which shows files uploaded to the on-prem location.  
   `db.[collection name].find()`  
   See screenshot with example.
 
