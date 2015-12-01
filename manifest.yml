@@ -19,3 +19,4 @@ applications:
   services:
     - HDS-SecureGateway
     - HDS-objectstorage
+  command: node Node/bin/www.js
