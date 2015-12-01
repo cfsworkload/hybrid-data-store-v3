@@ -19,7 +19,7 @@ to interact with files sitting on either **Object Storage** or an on-prem soluti
 Use the **Push to Bluemix** button bellow to Fork code and create and bind services to your Bluemix space. After the deployment
 skip to **Configure Single Sign On** step of this readme. 
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/project/cfsworkload/hybrid-data-store)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cfsworkload/hybrid-data-store-v3.git)
  
 
 ## Sign up for and log into Bluemix and DevOps
