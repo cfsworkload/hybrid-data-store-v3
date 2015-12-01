@@ -14,11 +14,35 @@ after signing up for Bluemix and the DevOps Services. You will attach the
 **Object Storage**, **Single Sign On**, and the **Secure Gateway** services. Once the application is set up, you will be able
 to interact with files sitting on either **Object Storage** or an on-prem solution.
 
+## Push to Bluemix Button
+
+Use the **Push to Bluemix** button bellow to Fork code and create and bind services to your Bluemix space. After the deployment
+skip to **Configure Single Sign On** step of this readme. 
+
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/project/cfsworkload/hybrid-data-store)
+ 
 
 ## Sign up for and log into Bluemix and DevOps
 
 Sign up for Bluemix at https://console.ng.bluemix.net and DevOps Services at https://hub.jazz.net.
 When you sign up, you'll create an IBM ID, create an alias, and register with Bluemix.
+
+
+## Fork Project to a Personal DevOps Space
+
+Next, fork the publicly accessible repository hosted in http://hub.jazz.net to your
+personal DevOps space. Once you do this, you will be able to deploy the code to Bluemix and spin
+up instances of the Hybrid Data Storage application.
+
+1. Navigate to [the tutorial's repository](https://hub.jazz.net/project/cfsworkload/hybrid-data-store/overview).
+2. In top right of the page, click **Fork Project**. A pop-up menu will appear where you'll provide information about the forked project.
+3. In **Name your project**, enter the name you chose for your starter Node.js app.
+4. Select the same **Space** where your starter Node.js app was created and click **CREATE**.
+
+You have successfully forked the application code to your personal DevOps space.
+To find more about Bluemix's DevOps features, view the docs at
+https://hub.jazz.net/docs.
+
 
 ## Create a bridge Cloud Foundry application
 
@@ -63,19 +87,6 @@ You will now create a Single Sign On instance and bind it to your bridge applica
 3. Add the service **Single Sign On** from the **Security** category.
 4. In the **App** drop-down list, leave the default selection as **Leave unbound**.
 5. Click **CREATE**. You'll be taken to the Single Sign On configuration menu.
-6. Enter a name for the service and click **Continue**.
-7. Select **Cloud Directory** on the left.
-8. Create a new user to log in to the application with and click **Save**.
-
-  ![Example](images/guest.jpg)
-
-  This will create the unbound service in your main dashboard under **Services**. You will now bind the service to your bridge app.
-
-9. Return to your bridge application's dashboard and click **BIND A SERVICE OR API**.
-10. From the list of services, select your newly configured **Single Sign On** and click **ADD**.
-11. Click **RESTAGE**.
-
-You have now attached Single Sign On and can move on to attach your Secure Gateway, which will be used later when connecting to your on-prem database.
 
 ### Add Secure Gateway
 
@@ -83,25 +94,28 @@ You have now attached Single Sign On and can move on to attach your Secure Gatew
 2. In the service configuration, keep the default values and make sure the **App** field has selected your bridge application instead of  leaving the service unbound.
 3. Click **RESTAGE** and click **Overview** in the left sidebar.
 
+### Configure Single Sign On
+
+If you used the push to bluemix button to get here. Select the **Single Sign On** service in your space to take you to the
+configuration menu.
+
+1. Enter a name for the service and click **Continue**.
+2. Select **Cloud Directory** on the left.
+3. Create a new user to log in to the application with and click **Save**.
+
+  ![Example](images/guest.jpg)
+
+  This will create the unbound service in your main dashboard under **Services**. You will now bind the service to your bridge app.
+
+4. Return to your bridge application's dashboard and click **BIND A SERVICE OR API**.
+5. From the list of services, select your newly configured **Single Sign On** and click **ADD**.
+6. Click **RESTAGE**.
+
 Once you have successfully bound the **Object Storage**, **Single Sign On**, and **Secure Gateway** services to your bridge
 application, your app's dashboard should appear like this:
 
 ![EXAMPLE](images/hdsv3.jpg)
 
-## Fork Project to a Personal DevOps Space
-
-Next, fork the publicly accessible repository hosted in http://hub.jazz.net to your
-personal DevOps space. Once you do this, you will be able to deploy the code to Bluemix and spin
-up instances of the Hybrid Data Storage application.
-
-1. Navigate to [the tutorial's repository](https://hub.jazz.net/project/cfsworkload/hybrid-data-store/overview).
-2. In top right of the page, click **Fork Project**. A pop-up menu will appear where you'll provide information about the forked project.
-3. In **Name your project**, enter the name you chose for your starter Node.js app.
-4. Select the same **Space** where your starter Node.js app was created and click **CREATE**.
-
-You have successfully forked the application code to your personal DevOps space.
-To find more about Bluemix's DevOps features, view the docs at
-https://hub.jazz.net/docs.
 
 ## Set up an on-prem database and connect Secure Gateway
 
@@ -267,4 +281,3 @@ To inspect Object Storage content:
 1. From the Application's Dashboard, select Object Storage.
 
 ![EXAMPLE](images/osv3.jpg)
-
