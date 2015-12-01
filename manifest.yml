@@ -16,6 +16,7 @@ applications:
   name: hybrid-data-store
   host: hybrid-data-store
   disk_quota: 1024M
+  buildpack: nodejs_buildpack
   services:
     - HDS-SecureGateway
     - HDS-objectstorage
