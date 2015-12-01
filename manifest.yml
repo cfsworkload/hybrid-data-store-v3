@@ -8,7 +8,7 @@ declared-services:
     plan: standard
   HDS-objectstorage:
     label: Object-Storage
-    plan: beta
+    plan: Beta
 applications:
 - path: .
   memory: 512M
