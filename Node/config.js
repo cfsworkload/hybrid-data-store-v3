@@ -11,6 +11,6 @@ module.exports.HOSTNAME = 'HOSTNAME';
 module.exports.group_id = 'group_id';
 
 // on premise credentials. export them and make them available to other modules
-module.exports.onpremHost = "cap-sg-prd-1.integration.ibmcloud.com"//nconf.get('CAR_SG').onpremHost;
-module.exports.onpremPort = "15395"
+module.exports.onpremHost = "129.41.154.219"//nconf.get('CAR_SG').onpremHost;
+module.exports.onpremPort = "27017"
 
