@@ -174,7 +174,7 @@ function pushTopLayerRoutes() {
 
 
     // for all requestes that reach here check that request is authenticated and then pass to routes module
-    app.use('/', ensureAuthenticated, routes);
+    app.use('/', routes);
 
     // catch 404 and forward to error handler
     app.use(function (req, res, next) {
