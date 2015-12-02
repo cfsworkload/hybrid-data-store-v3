@@ -4,13 +4,13 @@ var path = require('path');
 // Hard coded name from object store container used in this demonstration. Export it to make it available to other modules. 
 module.exports.container = "HDScontainer";
 
-module.exports.containerDestroy = false;//(nconf.get('CAR_OSV2_PUBLIC_CONTAINER_DESTROY').toLowerCase() === 'true');
+module.exports.containerDestroy = false;
 
 module.exports.tmp = 'tmp';
 module.exports.HOSTNAME = 'HOSTNAME';
 module.exports.group_id = 'group_id';
 
 // on premise credentials. export them and make them available to other modules
-module.exports.onpremHost = "129.41.154.219"//nconf.get('CAR_SG').onpremHost;
-module.exports.onpremPort = "27017"
+module.exports.onpremHost = process.env.GATEWAYIP;
+module.exports.onpremPort = process.env.GATEWAYPORT;
 

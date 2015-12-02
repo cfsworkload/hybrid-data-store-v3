@@ -78,6 +78,12 @@ add or bind services.
 
 You have successfully deployed and bound an instance of Object Storage to your starter bridge application.
 
+### Add Secure Gateway
+
+1. Using what you've learned, return to the bridge application's dashboard and add the **Secure Gateway** service from the **Integration** category.
+2. In the service configuration, keep the default values and make sure the **App** field has selected your bridge application instead of  leaving the service unbound.
+3. Click **RESTAGE** and click **Overview** in the left sidebar.
+
 ### Add Single Sign On
 
 You will now create a Single Sign On instance and bind it to your bridge application. You must create the service in an unbound scenario and configure it before you bind it to the application.
@@ -87,12 +93,6 @@ You will now create a Single Sign On instance and bind it to your bridge applica
 3. Add the service **Single Sign On** from the **Security** category.
 4. In the **App** drop-down list, leave the default selection as **Leave unbound**.
 5. Click **CREATE**. You'll be taken to the Single Sign On configuration menu.
-
-### Add Secure Gateway
-
-1. Using what you've learned, return to the bridge application's dashboard and add the **Secure Gateway** service from the **Integration** category.
-2. In the service configuration, keep the default values and make sure the **App** field has selected your bridge application instead of  leaving the service unbound.
-3. Click **RESTAGE** and click **Overview** in the left sidebar.
 
 ### Configure Single Sign On
 
