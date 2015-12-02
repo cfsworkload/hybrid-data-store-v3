@@ -14,19 +14,21 @@ after signing up for Bluemix and the DevOps Services. You will attach the
 **Object Storage**, **Single Sign On**, and the **Secure Gateway** services. Once the application is set up, you will be able
 to interact with files sitting on either **Object Storage** or an on-prem solution.
 
-## Push to Bluemix Button
-
-Use the **Push to Bluemix** button bellow to Fork code and create and bind services to your Bluemix space. After the deployment
-skip to **Configure Single Sign On** step of this readme. 
-
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cfsworkload/hybrid-data-store-v3.git)
- 
 
 ## Sign up for and log into Bluemix and DevOps
 
 Sign up for Bluemix at https://console.ng.bluemix.net and DevOps Services at https://hub.jazz.net.
 When you sign up, you'll create an IBM ID, create an alias, and register with Bluemix.
 
+
+## Push to Bluemix Button
+
+Use the **Push to Bluemix** button bellow to fork the code and create / bind the services to your Bluemix space. After the deployment
+skip to **Configure Single Sign On** step of this readme. 
+
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cfsworkload/hybrid-data-store-v3.git)
+ 
+If you want to manually create the application and services follow steps below.
 
 ## Fork Project to a Personal DevOps Space
 
