@@ -23,7 +23,7 @@ When you sign up, you'll create an IBM ID, create an alias, and register with Bl
 
 ## Push to Bluemix Button
 
-Use the **Push to Bluemix** button bellow to fork the code and create / bind the services to your Bluemix space. After the deployment
+Use the **Push to Bluemix** button below to fork the code and create / bind the services to your Bluemix space. After the deployment
 skip to **Configure Single Sign On** step of this readme. 
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cfsworkload/hybrid-data-store-v3.git)
